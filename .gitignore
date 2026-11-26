@@ -4,3 +4,4 @@ node_modules/
 .agent_tmp/
 __pycache__/
 *.pyc
+_banners.jpg

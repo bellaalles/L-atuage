@@ -4,55 +4,55 @@ INDEX = """
 <main id="top">
 
 <section class="hero">
-  <div class="container">
-    <div class="hero__grid">
-      <div class="hero__lead">
-        <span class="label">L'ATUAGE · Минск · с 2014 года</span>
-        <h1>
-          <span>Декоративная</span>
-          <span>косметика</span>
-          <span class="hero__accent">без компромиссов</span>
-        </h1>
+  <div class="hero__inner">
+    <div class="hero__text">
+      <span class="hero__kicker">Минск · собственное производство · с 2014 года</span>
+      <h1>
+        <span>Декоративная</span>
+        <span>косметика</span>
+        <span class="hero__accent">без компромиссов</span>
+      </h1>
+      <p class="hero__lead">300+ наименований собственного производства. Формулы,
+      которые держатся до 24 часов и не требуют «дотягивания» кистью.</p>
+      <div class="hero__cta">
+        <a class="btn btn--light" href="catalog.html"><span>Смотреть каталог</span>{arrow}</a>
+        <a class="btn btn--outline-light" href="about.html"><span>О бренде</span></a>
       </div>
-      <div class="hero__side">
-        <p>300+ наименований собственного производства. Формулы, которые держатся
-        до 24 часов и не требуют «дотягивания» кистью.</p>
-        <div class="hero__cta">
-          <a class="btn btn--red" href="catalog.html"><span>Смотреть каталог</span>{arrow}</a>
-          <a class="btn btn--ghost" href="about.html"><span>О бренде</span></a>
-        </div>
-        <ul class="hero__facts">
-          <li><b data-count="300" data-suffix="+">300+</b><span>наименований</span></li>
-          <li><b data-count="500" data-suffix="+">500+</b><span>магазинов</span></li>
-          <li><b data-count="6">6</b><span>стран</span></li>
-        </ul>
-      </div>
+      <ul class="hero__facts">
+        <li><b data-count="300" data-suffix="+">300+</b><span>наименований</span></li>
+        <li><b data-count="500" data-suffix="+">500+</b><span>магазинов</span></li>
+        <li><b data-count="6">6</b><span>стран</span></li>
+      </ul>
+    </div>
+    <div class="hero__media">
+      <img src="assets/img/photos/hero-portrait.webp" alt="Модель с макияжем L'ATUAGE" fetchpriority="high">
+      <span class="hero__tag">In Red · флагманская помада</span>
     </div>
   </div>
-
-  <div class="shelf">
-    <a class="shelf__item" href="catalog.html?cat=eyes" style="--tint:#e9e3d8">
-      <span class="shelf__idx">01</span>
-      <img src="assets/img/products/teni-mysterious.webp" alt="Тени для век" fetchpriority="high">
-      <span class="shelf__meta"><b>Глаза</b><i>21 продукт</i></span>
-    </a>
-    <a class="shelf__item" href="catalog.html?cat=lips" style="--tint:#f7d7d4">
-      <span class="shelf__idx">02</span>
-      <img src="assets/img/products/pomada-inred.webp" alt="Помада">
-      <span class="shelf__meta"><b>Губы</b><i>7 продуктов</i></span>
-    </a>
-    <a class="shelf__item" href="catalog.html?cat=face" style="--tint:#f1e4c3">
-      <span class="shelf__idx">03</span>
-      <img src="assets/img/products/pudra-smart.webp" alt="Пудра">
-      <span class="shelf__meta"><b>Лицо</b><i>18 продуктов</i></span>
-    </a>
-    <a class="shelf__item" href="catalog.html?cat=hands" style="--tint:#dee3d4">
-      <span class="shelf__idx">04</span>
-      <img src="assets/img/products/lak-cream.webp" alt="Лак для ногтей">
-      <span class="shelf__meta"><b>Руки</b><i>10 продуктов</i></span>
-    </a>
-  </div>
 </section>
+
+<div class="shelf">
+  <a class="shelf__item" href="catalog.html?cat=eyes" style="--tint:#e7dfd0">
+    <span class="shelf__idx">01</span>
+    <img src="assets/img/products/teni-mysterious.webp" alt="Тени для век" fetchpriority="high">
+    <span class="shelf__meta"><b>Глаза</b><i>21 продукт</i></span>
+  </a>
+  <a class="shelf__item" href="catalog.html?cat=lips" style="--tint:#f0dbd7">
+    <span class="shelf__idx">02</span>
+    <img src="assets/img/products/pomada-inred.webp" alt="Помада">
+    <span class="shelf__meta"><b>Губы</b><i>7 продуктов</i></span>
+  </a>
+  <a class="shelf__item" href="catalog.html?cat=face" style="--tint:#efe6cf">
+    <span class="shelf__idx">03</span>
+    <img src="assets/img/products/pudra-smart.webp" alt="Пудра">
+    <span class="shelf__meta"><b>Лицо</b><i>18 продуктов</i></span>
+  </a>
+  <a class="shelf__item" href="catalog.html?cat=hands" style="--tint:#e2e6db">
+    <span class="shelf__idx">04</span>
+    <img src="assets/img/products/lak-cream.webp" alt="Лак для ногтей">
+    <span class="shelf__meta"><b>Руки</b><i>10 продуктов</i></span>
+  </a>
+</div>
 
 <div class="ticker">
   <div class="marquee" style="--dur:46s">
@@ -81,12 +81,64 @@ INDEX = """
   </div>
 </section>
 
+
+<section class="section" id="looks">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="label">02 / Образы</span>
+        <h2>Три образа <em>одной коллекции</em></h2>
+      </div>
+      <p class="u-dim" style="max-width:32ch;font-size:14px;margin:0">
+        Каждый образ собран из продуктов L'ATUAGE — от базы до финального блика.
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="looks">
+      <a class="look reveal" href="catalog.html?cat=lips">
+        <img src="assets/img/photos/smile-red.webp" alt="Образ с красной помадой" loading="lazy">
+        <span class="look__cap"><b>Красная помада</b><span>Губы</span></span>
+      </a>
+      <a class="look reveal" href="catalog.html?cat=eyes" style="--d:1">
+        <img src="assets/img/photos/look-sheer.webp" alt="Образ со стрелками" loading="lazy">
+        <span class="look__cap"><b>Тонкая стрелка</b><span>Глаза</span></span>
+      </a>
+      <a class="look reveal" href="catalog.html?cat=face" style="--d:2">
+        <img src="assets/img/photos/afro-glow.webp" alt="Образ со светящейся кожей" loading="lazy">
+        <span class="look__cap"><b>Сияние кожи</b><span>Лицо</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="manifest">
+  <div class="container">
+    <div class="ed">
+      <div class="ed__media">
+        <img src="assets/img/photos/dark-portrait.webp" alt="Бьюти-съёмка L'ATUAGE" loading="lazy">
+      </div>
+      <div class="ed__body">
+        <span class="label">03 / Манифест</span>
+        <h2>Красота <span class="dash"></span> это<br><em>уверенность</em>,<br>а не маска</h2>
+        <p>Мы делаем косметику для реальной жизни: плотные пигменты, которые
+        не осыпаются, текстуры, которые не требуют ретуши, и оттенки, которые
+        подходят с первого раза.</p>
+        <p>Каждая партия собирается в Минске на собственном производстве —
+        от первого пигмента до последней крышки.</p>
+        <span class="ed__sign">L'Atuage, с 2014 года</span>
+        <a class="btn btn--ghost" href="about.html"><span>О бренде</span>{arrow}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="formula">
   <div class="container">
     <div class="formula">
       <div class="formula__lead">
         <span class="label">02 / Формула</span>
-        <h2>Что внутри —<br><em>то и на коже</em></h2>
+        <h2>Что внутри <span class="dash"></span><br><em>то и на коже</em></h2>
         <p>Мы не гонимся за «вау-составом» на упаковке. В формулах только то,
         что реально работает: пигмент, текстура и стойкость, проверенные лабораторией.</p>
         <a class="btn btn--ghost" href="about.html#production"><span>О производстве</span>{arrow}</a>
@@ -108,7 +160,7 @@ INDEX = """
     <div class="section-head">
       <div>
         <span class="label">03 / Оттенки</span>
-        <h2>Подбери свой <em>за пару кликов</em></h2>
+        <h2>Подбери оттенок <em>за пару кликов</em></h2>
       </div>
       <p class="u-dim" style="max-width:30ch;font-size:14px;margin:0">Четыре семейства оттенков — от нюдовых до винных. Нажмите на цвет, чтобы увидеть продукт.</p>
     </div>
@@ -207,23 +259,23 @@ INDEX = """
         <span class="label">07 / Журнал</span>
         <h2>Читать <em>перед покупкой</em></h2>
       </div>
-      <a class="link-arrow" href="#">Все статьи {arrow}</a>
+      <a class="link-arrow" href="journal.html">Все статьи {arrow}</a>
     </div>
     <div class="journal__grid">
-      <a class="post reveal" href="#">
-        <div class="post__media" style="--tint:#e9e3d8"><img src="assets/img/products/podvodka.webp" alt="Подводка L'ATUAGE" loading="lazy"></div>
+      <a class="post reveal" href="article.html?id=strelki">
+        <div class="post__media"><img src="assets/img/photos/makeup-apply.webp" alt="Макияж L'ATUAGE" loading="lazy"></div>
         <div class="post__meta"><em>Гид</em><span>12 ноября 2025</span></div>
         <h3>Стрелки без права на ошибку: 4 способа для новичков</h3>
         <p>Разбираем подводки и фломастеры L'ATUAGE — какая форма линии получается с каждым.</p>
       </a>
-      <a class="post reveal" href="#" style="--d:1">
-        <div class="post__media" style="--tint:#f7d7d4"><img src="assets/img/products/pomada-bematte.webp" alt="Помада be Matte" loading="lazy"></div>
+      <a class="post reveal" href="article.html?id=krasnyj" style="--d:1">
+        <div class="post__media"><img src="assets/img/photos/look-lavender.webp" alt="Образ с помадой" loading="lazy"></div>
         <div class="post__meta"><em>Тренды</em><span>28 октября 2025</span></div>
-        <h3>Красный — новый нюд: как выбрать свой оттенок</h3>
+        <h3>Красный <span class="dash"></span> новый нюд: как выбрать свой оттенок</h3>
         <p>Тёплый, холодный, винный — показываем, как подобрать красную помаду.</p>
       </a>
-      <a class="post reveal" href="#" style="--d:2">
-        <div class="post__media" style="--tint:#dee3d4"><img src="assets/img/products/syvorotka.webp" alt="Сыворотка L'ATUAGE" loading="lazy"></div>
+      <a class="post reveal" href="article.html?id=sloi" style="--d:2">
+        <div class="post__media"><img src="assets/img/photos/pink-back.webp" alt="Бьюти-съёмка" loading="lazy"></div>
         <div class="post__meta"><em>Уход</em><span>10 октября 2025</span></div>
         <h3>Сыворотка, тоник, пудра: правильный порядок слоёв</h3>
         <p>Как уход и макияж сочетаются, чтобы тон держался до вечера.</p>
@@ -244,17 +296,17 @@ INDEX = """
     <div class="quotes__grid">
       <figure class="quote reveal">
         <div class="quote__stars">{stars}</div>
-        <blockquote>«Кто спрашивал о помаде? Это #LATUAGECOSMETIC №108 — бюджетная и офигенная. Она уже в блоге».</blockquote>
+        <blockquote>«Кто спрашивал о помаде? Это #LATUAGECOSMETIC №108 <span class="dash"></span> бюджетная и офигенная. Она уже в блоге».</blockquote>
         <figcaption><div><b>@rysichka_makeup</b>Instagram</div></figcaption>
       </figure>
       <figure class="quote reveal" style="--d:1">
         <div class="quote__stars">{stars}</div>
-        <blockquote>«Скоро обзор теней от L'ATUAGE. Все тени и тестеры в наличии — в Минске больше нигде нет этой косметики».</blockquote>
+        <blockquote>«Скоро обзор теней от L'ATUAGE. Все тени и тестеры в наличии <span class="dash"></span> в Минске больше нигде нет этой косметики».</blockquote>
         <figcaption><div><b>@kolesnikova_elena</b>Instagram</div></figcaption>
       </figure>
       <figure class="quote reveal" style="--d:2">
         <div class="quote__stars">{stars}</div>
-        <blockquote>«Плотность и пигмент как у люкса, а цена — как у масс-маркета. Мои клиентки возвращаются именно за этим».</blockquote>
+        <blockquote>«Плотность и пигмент как у люкса, а цена <span class="dash"></span> как у масс-маркета. Мои клиентки возвращаются именно за этим».</blockquote>
         <figcaption><div><b>Инна Леута</b>Арт-директор «Академия Стиля»</div></figcaption>
       </figure>
     </div>
@@ -266,7 +318,7 @@ INDEX = """
     <div class="stores__inner">
       <div>
         <span class="label">09 / Где купить</span>
-        <h2 style="margin-top:16px">500+ магазинов<br><em>в шести странах</em></h2>
+        <h2 style="margin-top:16px">500<span class="plus">+</span> магазинов<br><em>в шести странах</em></h2>
         <p>Беларусь, Россия, Казахстан, Украина, Молдова и Польша.
         Ищем партнёров в новых городах — пишите, если у вас есть магазин.</p>
         <div class="stores__legend">

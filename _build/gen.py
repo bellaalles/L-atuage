@@ -26,7 +26,7 @@ NAV = [
     ('index.html#best', 'Хиты'),
     ('about.html', 'О бренде'),
     ('contacts.html', 'Где купить'),
-    ('index.html#journal', 'Журнал'),
+    ('journal.html', 'Журнал'),
 ]
 
 HEAD = """<!DOCTYPE html>
@@ -44,8 +44,8 @@ HEAD = """<!DOCTYPE html>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230b0b0c'/%3E%3Crect x='0' y='56' width='64' height='8' fill='%23e5112b'/%3E%3Ctext x='32' y='40' font-family='Helvetica,Arial' font-size='30' font-weight='600' fill='%23fff' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=6">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=23">
 </head>
 <body>
 <div class="loader" aria-hidden="true">
@@ -152,8 +152,8 @@ FOOTER = """
   </div>
 </footer>
 <button class="to-top" aria-label="Наверх">{up}</button>
-<script src="assets/js/data.js?v=4"></script>
-<script src="assets/js/app.js?v=4"></script>
+<script src="assets/js/data.js?v=7"></script>
+<script src="assets/js/app.js?v=6"></script>
 </body>
 </html>
 """
@@ -339,14 +339,12 @@ ABOUT = """
 <section class="section section--tight">
   <div class="container">
     <div class="split split--reverse">
-      <div class="plate" style="--tint:#f7d7d4;aspect-ratio:1/1">
-        <span class="plate__idx">12 лет</span>
-        <img src="assets/img/products/pomada-inred.webp" alt="Помада L'ATUAGE in Red" loading="lazy">
-        <span class="plate__cap">Помада in Red · флагман линейки</span>
+      <div class="ed__media" style="aspect-ratio:1/1">
+        <img src="assets/img/photos/warm-portrait.webp" alt="Бьюти-образ L'ATUAGE" loading="lazy">
       </div>
       <div>
         <span class="eyebrow label">Наша идея</span>
-        <p class="statement">Мы верим, что хороший макияж — это не про «дорого», а про <em>точность формулы</em> и уважение к человеку перед зеркалом.</p>
+        <p class="statement">Мы верим, что хороший макияж <span class="dash"></span> это не про «дорого», а про <em>точность формулы</em> и уважение к человеку перед зеркалом.</p>
         <p class="u-dim u-mt-24">Бренд вырос из оптовой компании, которая знала рынок изнутри:
         какие текстуры реально покупают, а какие остаются лежать на полке. Поэтому в L'ATUAGE сначала
         появляется задача покупателя — и только потом флакон.</p>
@@ -365,7 +363,7 @@ ABOUT = """
     <div class="section-head">
       <div>
         <span class="eyebrow label">Производство</span>
-        <h2>Полный цикл —<br><em>в одном месте</em></h2>
+        <h2>Полный цикл <span class="dash"></span><br><em>в одном месте</em></h2>
       </div>
       <p class="u-dim" style="max-width:34ch;font-size:14px">Разработка, тестирование, производство и логистика — внутри компании. Так мы отвечаем за каждый этап.</p>
     </div>
@@ -381,11 +379,11 @@ ABOUT = """
 <section class="section section--tight">
   <div class="container">
     <div class="mosaic">
-      <figure style="--tint:#e9e3d8"><img src="assets/img/products/teni-smart-touch.webp" alt="Палетка Smart Touch" loading="lazy"></figure>
-      <figure style="--tint:#f7d7d4"><img src="assets/img/products/blesk-gub.webp" alt="Блеск для губ" loading="lazy"></figure>
-      <figure style="--tint:#f1e4c3"><img src="assets/img/products/pudra-mineral.webp" alt="Пудра Mineral Balance" loading="lazy"></figure>
-      <figure style="--tint:#dee3d4"><img src="assets/img/products/lak-effect.webp" alt="Лак Effect" loading="lazy"></figure>
-      <figure style="--tint:#e4ddeb"><img src="assets/img/products/tush-full-hd.webp" alt="Тушь Full HD" loading="lazy"></figure>
+      <figure class="is-photo"><img src="assets/img/photos/look-bluenight.webp" alt="Вечерний образ L'ATUAGE" loading="lazy"></figure>
+      <figure style="--tint:#f0dbd7"><img src="assets/img/products/blesk-gub.webp" alt="Блеск для губ" loading="lazy"></figure>
+      <figure class="is-photo"><img src="assets/img/photos/makeup-apply.webp" alt="Нанесение макияжа L'ATUAGE" loading="lazy"></figure>
+      <figure style="--tint:#e2e6db"><img src="assets/img/products/lak-effect.webp" alt="Лак Effect" loading="lazy"></figure>
+      <figure style="--tint:#e6e0ea"><img src="assets/img/products/tush-full-hd.webp" alt="Тушь Full HD" loading="lazy"></figure>
     </div>
   </div>
 </section>
@@ -410,7 +408,7 @@ ABOUT = """
 
 <section class="section quotes">
   <div class="container">
-    <p class="quote-big">«Наша задача — чтобы косметика <em>не подводила</em> в самый важный день».</p>
+    <p class="quote-big">«Наша задача <span class="dash"></span> чтобы косметика <em>не подводила</em> в самый важный день».</p>
     <p class="u-center u-dim u-mt-24" style="font-size:12px;letter-spacing:.16em;text-transform:uppercase">Команда L'ATUAGE cosmetic</p>
   </div>
 </section>
@@ -564,6 +562,71 @@ CONTACTS = """
 """
 
 
+
+# ============================ JOURNAL ============================
+JOURNAL = """
+<main>
+<section class="phero">
+  <div class="phero__bg"></div>
+  <div class="container">
+    <nav class="crumbs" aria-label="Хлебные крошки">
+      <a href="index.html">Главная</a><span>/</span><span style="color:var(--ink)">Журнал</span>
+    </nav>
+    <h1>Журнал <em>L'ATUAGE</em></h1>
+    <div class="phero__sub">
+      <p>Гиды по продуктам, разборы оттенков и короткие инструкции от команды бренда.
+      Без «идеального макияжа за 5 минут» — только то, что работает.</p>
+      <span class="badge-round"><i></i>6 статей · обновляем каждый месяц</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:clamp(24px,3vw,40px)">
+  <div class="container">
+    <div class="jchips">
+      <button class="is-active" data-jcat="all">Все</button>
+      <button data-jcat="Гид">Гиды</button>
+      <button data-jcat="Тренды">Тренды</button>
+      <button data-jcat="Уход">Уход</button>
+      <button data-jcat="Макияж">Макияж</button>
+    </div>
+    <div class="journal__grid journal__grid--wide" id="journal-list"></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta__inner">
+    <div>
+      <span class="label">Рассылка</span>
+      <h2 class="cta__title">Новые разборы <em>раз в месяц</em></h2>
+    </div>
+    <form class="sub-form" data-form>
+      <input type="email" placeholder="Ваш e-mail" required aria-label="Ваш e-mail">
+      <button type="submit" aria-label="Подписаться">{arrow}</button>
+      <small>Подписываясь, вы соглашаетесь с политикой конфиденциальности.</small>
+    </form>
+  </div>
+</section>
+</main>
+"""
+
+# ============================ ARTICLE ============================
+ARTICLE = """
+<main>
+<section class="phero phero--art">
+  <div class="phero__bg"></div>
+  <div class="container">
+    <nav class="crumbs" aria-label="Хлебные крошки">
+      <a href="index.html">Главная</a><span>/</span>
+      <a href="journal.html">Журнал</a><span>/</span>
+      <span style="color:var(--ink)" id="crumb-article">Статья</span>
+    </nav>
+  </div>
+</section>
+<article id="article"></article>
+</main>
+"""
+
 # ============================ RUN ============================
 ARROW_LEFT = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" '
               'stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>')
@@ -634,6 +697,22 @@ page(
     "собственные формулы, производство полного цикла в Минске, 500+ магазинов.",
     ABOUT.format(**SUB),
     active='about.html',
+)
+
+page(
+    'journal.html',
+    "Журнал — L'ATUAGE COSMETIC",
+    "Журнал L'ATUAGE cosmetic: гиды по продуктам, разборы оттенков и инструкции по макияжу от команды бренда.",
+    JOURNAL.format(**SUB),
+    active='journal.html',
+)
+
+page(
+    'article.html',
+    "Статья — L'ATUAGE COSMETIC",
+    "Статья журнала L'ATUAGE cosmetic.",
+    ARTICLE.format(**SUB),
+    active='journal.html',
 )
 
 page(

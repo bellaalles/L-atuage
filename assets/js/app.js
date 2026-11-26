@@ -584,6 +584,84 @@
     });
   }
 
+
+  /* ---------------- journal ---------------- */
+  function postCard(a, i) {
+    return `
+      <a class="post reveal" href="article.html?id=${a.id}" style="--d:${i % 3}">
+        <div class="post__media"><img src="${a.cover}" alt="${a.cat}" loading="lazy"></div>
+        <div class="post__meta"><em>${a.cat}</em><span>${a.date}</span><span>${a.read}</span></div>
+        <h3 class="post__title">${a.title}</h3>
+        <p>${a.lead}</p>
+      </a>`;
+  }
+
+  function initJournal() {
+    const grid = $('#journal-list');
+    if (!grid || !window.ARTICLES) return;
+    grid.innerHTML = window.ARTICLES.map(postCard).join('');
+    $$('.reveal', grid).forEach((el) => el.classList.add('is-in'));
+
+    const chips = $$('[data-jcat]');
+    chips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        chips.forEach((c) => c.classList.remove('is-active'));
+        chip.classList.add('is-active');
+        const cat = chip.dataset.jcat;
+        const list = cat === 'all' ? window.ARTICLES : window.ARTICLES.filter((a) => a.cat === cat);
+        grid.innerHTML = list.map(postCard).join('');
+      });
+    });
+  }
+
+  function initArticle() {
+    const root = $('#article');
+    if (!root || !window.ARTICLES) return;
+    const id = new URLSearchParams(location.search).get('id');
+    const idx = Math.max(0, window.ARTICLES.findIndex((a) => a.id === id));
+    const a = window.ARTICLES[idx] || window.ARTICLES[0];
+    const next = window.ARTICLES[(idx + 1) % window.ARTICLES.length];
+
+    document.title = `${a.title.replace(/<[^>]+>/g, '')} — L'ATUAGE COSMETIC`;
+    const crumb = $('#crumb-article');
+    if (crumb) crumb.textContent = a.cat;
+
+    const body = a.blocks.map((b) => {
+      if (b.t === 'h2') return `<h2>${b.text}</h2>`;
+      if (b.t === 'quote') return `<blockquote>«${b.text}»</blockquote>`;
+      return `<p>${b.text}</p>`;
+    }).join('');
+
+    const prods = (a.products || [])
+      .map((pid) => window.PRODUCTS.find((p) => p.id === pid))
+      .filter(Boolean)
+      .map((p) => `
+        <a class="art__prod" href="product.html?id=${p.id}">
+          <span class="art__prod-img" style="--tint:${(window.TINT && window.TINT[p.cat]) || '#efe8db'}">
+            <img src="${p.img}" alt="${p.name}" loading="lazy">
+          </span>
+          <b>${p.name}</b>
+          <small>${window.CAT_NAME[p.cat] || ''}</small>
+        </a>`)
+      .join('');
+
+    root.innerHTML = `
+      <div class="container art__head">
+        <span class="label">${a.cat} · ${a.date} · ${a.read}</span>
+        <h1 class="art__title">${a.title}</h1>
+        <p class="art__lead">${a.lead}</p>
+      </div>
+      <div class="art__cover"><img src="${a.cover}" alt="" loading="lazy"></div>
+      <div class="container art__body">
+        ${body}
+        ${prods ? `<div class="art__prods"><h3>Из статьи</h3><div class="art__prods-grid">${prods}</div></div>` : ''}
+        <a class="art__next" href="article.html?id=${next.id}">
+          <span>Следующая статья</span>
+          <b>${next.title}</b>
+        </a>
+      </div>`;
+  }
+
   /* ---------------- init ---------------- */
   document.addEventListener('DOMContentLoaded', () => {
     initLoader();
@@ -593,6 +671,8 @@
     initHomeRails();
     initCatalog();
     initProductPage();
+    initJournal();
+    initArticle();
     initQuickView();
     initFavs();
     initReveal();
