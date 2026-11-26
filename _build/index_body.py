@@ -331,7 +331,7 @@ INDEX += """
   </div>
 </section>
 
-<section class="section stores">
+<section class="section stores" id="where">
   <div class="container">
     <div class="stores__inner">
       <div>
