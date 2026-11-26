@@ -1,5 +1,9 @@
 /* L'ATUAGE COSMETIC — interactions */
 (function () {
+
+/** Bodoni Moda не содержит глиф тире — рисуем его через .dash */
+const dashify = (html) => String(html).replace(/\s*[—–]\s*/g, ' <span class="dash"></span> ');
+
   'use strict';
 
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
@@ -591,7 +595,7 @@
       <a class="post reveal" href="article.html?id=${a.id}" style="--d:${i % 3}">
         <div class="post__media"><img src="${a.cover}" alt="${a.cat}" loading="lazy"></div>
         <div class="post__meta"><em>${a.cat}</em><span>${a.date}</span><span>${a.read}</span></div>
-        <h3 class="post__title">${a.title}</h3>
+        <h3 class="post__title">${dashify(a.title)}</h3>
         <p>${a.lead}</p>
       </a>`;
   }
@@ -648,16 +652,16 @@
     root.innerHTML = `
       <div class="container art__head">
         <span class="label">${a.cat} · ${a.date} · ${a.read}</span>
-        <h1 class="art__title">${a.title}</h1>
+        <h1 class="art__title">${dashify(a.title)}</h1>
         <p class="art__lead">${a.lead}</p>
       </div>
-      <div class="art__cover"><img src="${a.cover}" alt="" loading="lazy"></div>
+      <div class="container"><div class="art__cover"><img src="${a.cover}" alt="" loading="lazy"></div></div>
       <div class="container art__body">
         ${body}
         ${prods ? `<div class="art__prods"><h3>Из статьи</h3><div class="art__prods-grid">${prods}</div></div>` : ''}
         <a class="art__next" href="article.html?id=${next.id}">
           <span>Следующая статья</span>
-          <b>${next.title}</b>
+          <b>${dashify(next.title)}</b>
         </a>
       </div>`;
   }

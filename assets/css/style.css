@@ -2005,3 +2005,126 @@ h1 em, h2 em, h3 em, .statement em, .quote-big em {
   .art__body p { font-size: 16px; }
 }
 .art__cover img { height: clamp(240px, 38vw, 470px); object-position: 50% 32%; }
+
+/* ================= v3: скругления, пилюли, мягкие карточки ================= */
+:root { --r-card: 18px; --r-media: 22px; --r-pill: 999px; }
+
+/* --- пилюли для подписей и кнопок --- */
+.btn,
+.btn--ghost,
+.btn--light,
+.btn--outline-light,
+.chips button,
+.shadex__tabs button,
+.jchips button,
+.toolbar select,
+.cat__arrow,
+.icon-btn,
+.hero__tag,
+.pcard__badge { border-radius: var(--r-pill); }
+
+.cat__arrow, .icon-btn { border-radius: 50%; }
+.chips button, .shadex__tabs button { padding-inline: 16px; }
+.pcard__badge { padding: 6px 12px; }
+.badge-round {
+  padding: 9px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background: rgba(255, 255, 255, .4);
+}
+
+/* --- мягкие медиа-плитки --- */
+.hero__media { margin: clamp(10px, 1.2vw, 20px); border-radius: clamp(18px, 2vw, 30px); }
+.hero__media img { border-radius: inherit; }
+
+.pcard { border: 1px solid var(--line-soft); border-radius: var(--r-card); overflow: hidden; }
+.pcard__media { border-radius: 0; }
+.cat, .plate, .look, .art__prod-img, .pdp__main, .post__media, .art__cover img, .quote__img,
+.mini img, .cart-item img, .stores img, .mosaic figure { border-radius: var(--r-card); }
+.pdp__thumbs button { border-radius: 12px; overflow: hidden; }
+.pdp__thumbs button span { border-radius: 6px; }
+
+/* --- сетки с воздухом вместо волосяных линий --- */
+.journal__grid { gap: 18px; background: transparent; border: 0; }
+.journal__grid .post {
+  border: 1px solid var(--line); border-radius: 20px; overflow: hidden;
+  padding-bottom: 24px; transition: border-color .4s var(--ease), transform .4s var(--ease);
+}
+.journal__grid .post:hover { border-color: var(--gold-2); transform: translateY(-3px); }
+.journal__grid .post__media { border-radius: 0; }
+
+.quotes__grid { gap: 18px; border: 0; }
+.quotes__grid .quote { border: 1px solid var(--line); border-radius: 20px; }
+
+.steps { gap: 14px; border: 0; }
+.steps .step { border: 1px solid var(--line); border-radius: var(--r-card); }
+
+.mosaic { gap: 12px; background: transparent; border: 0; }
+.cgrid { gap: 14px; background: transparent; border: 0; }
+.cgrid > * { border-radius: var(--r-card); overflow: hidden; }
+.facts { gap: 14px; background: transparent; border: 0; }
+.facts > * { border-radius: var(--r-card); }
+
+/* --- герой: плавающая карточка флагмана --- */
+.hero__card {
+  position: absolute;
+  right: clamp(16px, 2vw, 30px);
+  bottom: clamp(24px, 2.8vw, 42px);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 18px 10px 10px;
+  border-radius: var(--r-pill);
+  background: rgba(248, 244, 237, .9);
+  backdrop-filter: blur(10px);
+  color: var(--ink);
+  transition: background .4s var(--ease), transform .4s var(--ease);
+}
+.hero__card:hover { background: var(--paper); transform: translateY(-2px); }
+.hero__card-img {
+  display: grid; place-items: center; width: 46px; height: 46px;
+  border-radius: 50%; background: var(--bone); overflow: hidden;
+}
+.hero__card-img img { width: 84%; height: 84%; object-fit: contain; mix-blend-mode: multiply; }
+.hero__card-txt { display: grid; gap: 1px; }
+.hero__card-txt small {
+  font-family: var(--font); font-size: 7.5px; letter-spacing: .26em;
+  text-transform: uppercase; color: var(--gold);
+}
+.hero__card-txt b { font-family: var(--serif); font-size: 15px; font-weight: 600; line-height: 1.1; }
+.hero__card-txt i {
+  font-style: normal; font-family: var(--font); font-size: 8.5px;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--ink-40);
+}
+@media (max-width: 900px) {
+  .hero__card { display: none; }
+  .hero__media { margin: 0; border-radius: 0; }
+}
+
+/* изображение героя не участвует в расчёте высоты */
+.hero__inner { align-items: stretch; }
+.hero__media { min-height: 0; }
+.hero__media > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 16%;
+}
+
+/* --- вторая волна скруглений: ленты, цифры --- */
+.rail-btn { border-radius: 50%; }
+.rail { gap: 14px; background: transparent; border: 0; }
+.stats__grid { gap: 14px; background: transparent; border: 0; }
+.stats__item { border: 1px solid var(--line); border-radius: var(--r-card); }
+.textures__item, .texture { border-radius: var(--r-card); }
+.ed__media img, .editorial img, .about__media img { border-radius: var(--r-card); }
+.shadex__panel .btn { justify-self: start; }
+.search { border-radius: var(--r-pill); }
+.toolbar { background: rgba(248, 244, 237, .92); }
+.pdp__thumbs button { border-radius: 14px; }
+.pdp__thumbs button.is-active { border-color: var(--ink); box-shadow: 0 0 0 3px rgba(19,17,16,.06); }
+.art__cover { border-radius: var(--r-media); }
+.art__cover img { border-radius: inherit; }

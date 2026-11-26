@@ -25,8 +25,12 @@ INDEX = """
       </ul>
     </div>
     <div class="hero__media">
-      <img src="assets/img/photos/hero-portrait.webp" alt="Модель с макияжем L'ATUAGE" fetchpriority="high">
+      <img src="assets/img/photos/look-sheer.webp" alt="Бьюти-образ L'ATUAGE" fetchpriority="high">
       <span class="hero__tag">In Red · флагманская помада</span>
+      <a class="hero__card" href="product.html?id=pomada-inred">
+        <span class="hero__card-img"><img src="assets/img/products/pomada-inred.webp" alt="Помада in Red" loading="lazy"></span>
+        <span class="hero__card-txt"><small>Флагман</small><b>Помада in Red</b><i>5 оттенков</i></span>
+      </a>
     </div>
   </div>
 </section>
@@ -97,15 +101,15 @@ INDEX = """
   <div class="container">
     <div class="looks">
       <a class="look reveal" href="catalog.html?cat=lips">
-        <img src="assets/img/photos/smile-red.webp" alt="Образ с красной помадой" loading="lazy">
-        <span class="look__cap"><b>Красная помада</b><span>Губы</span></span>
+        <img src="assets/img/photos/warm-portrait.webp" alt="Образ с тёплым нюдом" loading="lazy">
+        <span class="look__cap"><b>Тёплый нюд</b><span>Губы</span></span>
       </a>
       <a class="look reveal" href="catalog.html?cat=eyes" style="--d:1">
-        <img src="assets/img/photos/look-sheer.webp" alt="Образ со стрелками" loading="lazy">
+        <img src="assets/img/photos/makeup-apply.webp" alt="Образ со стрелками" loading="lazy">
         <span class="look__cap"><b>Тонкая стрелка</b><span>Глаза</span></span>
       </a>
       <a class="look reveal" href="catalog.html?cat=face" style="--d:2">
-        <img src="assets/img/photos/afro-glow.webp" alt="Образ со светящейся кожей" loading="lazy">
+        <img src="assets/img/photos/hero-portrait.webp" alt="Образ со светящейся кожей" loading="lazy">
         <span class="look__cap"><b>Сияние кожи</b><span>Лицо</span></span>
       </a>
     </div>
@@ -116,7 +120,7 @@ INDEX = """
   <div class="container">
     <div class="ed">
       <div class="ed__media">
-        <img src="assets/img/photos/dark-portrait.webp" alt="Бьюти-съёмка L'ATUAGE" loading="lazy">
+        <img src="assets/img/photos/bw-portrait.webp" alt="Бьюти-съёмка L'ATUAGE" loading="lazy">
       </div>
       <div class="ed__body">
         <span class="label">03 / Манифест</span>

@@ -313,7 +313,7 @@ window.ARTICLES = [
     cat: 'Макияж',
     date: '8 сентября 2025',
     read: '5 мин',
-    cover: 'assets/img/photos/afro-glow.webp',
+    cover: 'assets/img/photos/powder-brush.webp',
     title: 'Тон без маски: <em>как выбрать пудру</em> под свою кожу',
     lead: 'Минеральная, компактная, рассыпчатая — разбираем, чем они отличаются и кому подходят.',
     blocks: [
