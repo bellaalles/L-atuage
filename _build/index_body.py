@@ -141,7 +141,7 @@ INDEX = """
   <div class="container">
     <div class="formula">
       <div class="formula__lead">
-        <span class="label">02 / Формула</span>
+        <span class="label">04 / Формула</span>
         <h2>Что внутри <span class="dash"></span><br><em>то и на коже</em></h2>
         <p>Мы не гонимся за «вау-составом» на упаковке. В формулах только то,
         что реально работает: пигмент, текстура и стойкость, проверенные лабораторией.</p>
@@ -163,7 +163,7 @@ INDEX = """
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="label">03 / Оттенки</span>
+        <span class="label">05 / Оттенки</span>
         <h2>Подбери оттенок <em>за пару кликов</em></h2>
       </div>
       <p class="u-dim" style="max-width:30ch;font-size:14px;margin:0">Четыре семейства оттенков — от нюдовых до винных. Нажмите на цвет, чтобы увидеть продукт.</p>
@@ -196,7 +196,7 @@ INDEX = """
         <span class="plate__cap">Палетка Smart Touch · 12 оттенков</span>
       </div>
       <div>
-        <span class="label">04 / Производство</span>
+        <span class="label">06 / Производство</span>
         <h2 style="margin-top:16px">Свои формулы.<br><em>Своя лаборатория.</em></h2>
         <p>Мы не перепродаём чужое. Каждая формула разрабатывается и тестируется в Минске,
         а партия проходит контроль качества до того, как попадёт на полку.</p>
@@ -215,7 +215,7 @@ INDEX = """
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="label">05 / Витрина</span>
+        <span class="label">07 / Витрина</span>
         <h2>Вся палитра <em>на одном экране</em></h2>
       </div>
       <div class="rail-nav">
@@ -242,14 +242,14 @@ INDEX = """
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="label">06 / Как это делается</span>
+        <span class="label">08 / Как это делается</span>
         <h2>От идеи до <em>витрины</em></h2>
       </div>
       <a class="link-arrow" href="about.html">Подробнее о бренде {arrow}</a>
     </div>
     <div class="steps">
       <div class="step reveal"><b>01 / Идея</b><h3>Тренд-ресёрч</h3><p>Смотрим на подиумы, соцсети и запросы покупателей — выбираем, что действительно нужно.</p></div>
-      <div class="step reveal" style="--d:1"><b>02 / Формула</b><h3>Лаборатория</h3><p>Технологи подбирают текстуру, пигменты и консерванты под задачу продукта.</p></div>
+      <div class="step reveal" style="--d:1"><b>04 / Формула</b><h3>Лаборатория</h3><p>Технологи подбирают текстуру, пигменты и консерванты под задачу продукта.</p></div>
       <div class="step reveal" style="--d:2"><b>03 / Производство</b><h3>Своя площадка</h3><p>Полный цикл в Минске: смешивание, фасовка, маркировка, контроль партии.</p></div>
       <div class="step reveal" style="--d:3"><b>04 / Витрина</b><h3>500+ магазинов</h3><p>Логистика и мерчандайзинг: продукт приезжает готовым к продаже.</p></div>
     </div>
@@ -260,7 +260,7 @@ INDEX = """
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="label">07 / Журнал</span>
+        <span class="label">09 / Журнал</span>
         <h2>Читать <em>перед покупкой</em></h2>
       </div>
       <a class="link-arrow" href="journal.html">Все статьи {arrow}</a>
@@ -292,7 +292,7 @@ INDEX = """
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="label">08 / Отзывы</span>
+        <span class="label">10 / Отзывы</span>
         <h2>Что говорят <em>о нас</em></h2>
       </div>
       <span class="badge-round"><i></i>4.8 из 5 · 1 200+ отзывов</span>
@@ -321,7 +321,7 @@ INDEX = """
   <div class="container">
     <div class="stores__inner">
       <div>
-        <span class="label">09 / Где купить</span>
+        <span class="label">11 / Где купить</span>
         <h2 style="margin-top:16px">500<span class="plus">+</span> магазинов<br><em>в шести странах</em></h2>
         <p>Беларусь, Россия, Казахстан, Украина, Молдова и Польша.
         Ищем партнёров в новых городах — пишите, если у вас есть магазин.</p>
