@@ -1291,6 +1291,19 @@ p:last-child { margin-bottom: 0; }
   .mosaic { grid-template-columns: 1fr 1fr; }
 }
 
+@media (max-width: 720px) {
+  .hero__cta { flex-direction: column; align-items: stretch; }
+  .hero__cta .btn { width: 100%; justify-content: center; }
+  .pcard__body { padding: 12px 12px 14px; gap: 6px; }
+  .pcard__name { font-size: 13.5px; }
+  .pcard__row { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .pcard__go { display: none; }
+  .pcard__shades span { font-size: 8.5px; }
+  .section-head { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .texture { width: 74vw; }
+  .plate { aspect-ratio: 1 / 1; }
+}
+
 @media (max-width: 420px) {
   .cgrid { grid-template-columns: 1fr 1fr; }
   .shelf__meta i { display: none; }
