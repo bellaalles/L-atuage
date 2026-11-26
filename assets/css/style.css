@@ -1125,6 +1125,12 @@
 .cta { position: relative; background: var(--ink); color: var(--bone); overflow: hidden; isolation: isolate; }
 .cta__bg { position: absolute; inset: 0; z-index: -1; opacity: .55; }
 .cta__bg img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 30%; }
+.cta__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(15,10,8,.94) 0%, rgba(15,10,8,.72) 46%, rgba(15,10,8,.86) 100%);
+}
 .cta::before {
   content: "";
   position: absolute;
@@ -1140,11 +1146,11 @@
 .field { display: flex; align-items: center; gap: 12px; border-bottom: 1px solid rgba(244,239,232,.25); padding-bottom: 12px; transition: border-color .4s; }
 .field:focus-within { border-color: var(--bone); }
 .field input { flex: 1; background: transparent; border: 0; outline: 0; color: var(--bone); font-size: 15px; padding-block: 6px; }
-.field input::placeholder { color: rgba(244,239,232,.4); }
+.field input::placeholder { color: rgba(244,239,232,.58); }
 .field button { background: transparent; border: 0; color: var(--bone); cursor: pointer; display: grid; place-items: center; width: 34px; height: 34px; transition: transform .4s var(--ease); }
 .field button:hover { transform: translateX(4px); }
 .field svg { width: 18px; height: 18px; }
-.cta__note { font-size: 11px; color: rgba(244,239,232,.4); }
+.cta__note { font-size: 11px; color: rgba(244,239,232,.55); }
 .cta__ok { font-size: 13px; color: var(--blush); }
 @media (max-width: 900px) { .cta__inner { grid-template-columns: 1fr; } }
 
