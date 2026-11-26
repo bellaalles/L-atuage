@@ -1,0 +1,6 @@
+_assets/
+.DS_Store
+node_modules/
+.agent_tmp/
+__pycache__/
+*.pyc
