@@ -147,7 +147,7 @@
 
   function initRailNav() {
     $$('[data-rail]').forEach((wrap) => {
-      const rail = $('.rail, .lookbook__track', wrap);
+      const rail = $('.rail, .textures__track', wrap);
       if (!rail) return;
       const prev = $('[data-rail-prev]', wrap);
       const next = $('[data-rail-next]', wrap);
@@ -479,15 +479,91 @@
       if (!btn || !panel) return;
       btn.addEventListener('click', () => {
         const open = item.classList.contains('is-open');
-        $$('.acc__item.is-open').forEach((o) => {
-          o.classList.remove('is-open');
-          $('.acc__panel', o).style.height = '0px';
-        });
-        if (!open) {
-          item.classList.add('is-open');
-          panel.style.height = panel.firstElementChild.offsetHeight + 'px';
-        }
+        $$('.acc__item.is-open').forEach((o) => o.classList.remove('is-open'));
+        if (!open) item.classList.add('is-open');
       });
+    });
+  }
+
+
+  /* ---------------- подбор оттенка ---------------- */
+  function initShades() {
+    const root = $('[data-shadex]');
+    if (!root) return;
+    const groups = [
+      { label: 'Губы', pid: 'pomada-inred' },
+      { label: 'Глаза', pid: 'teni-smart-touch' },
+      { label: 'Лицо', pid: 'pudra-smart' },
+      { label: 'Руки', pid: 'lak-cream' }
+    ]
+      .map((g) => ({ ...g, product: window.PRODUCTS.find((p) => p.id === g.pid) }))
+      .filter((g) => g.product);
+    if (!groups.length) return;
+
+    const tabsEl = $('[data-shadex-tabs]', root);
+    const swEl = $('[data-shadex-sw]', root);
+    const stage = $('[data-shadex-stage]', root);
+    const img = $('[data-shadex-img]', root);
+    const nameEl = $('[data-shadex-name]', root);
+    const prodEl = $('[data-shadex-prod]', root);
+    const finEl = $('[data-shadex-fin]', root);
+    const holdEl = $('[data-shadex-hold]', root);
+    const link = $('[data-shadex-link]', root);
+
+    const HOLD = { eyes: 'до 24 часов', lips: 'до 8 часов', face: 'весь день', hands: 'до 10 дней' };
+    let gi = 0;
+    let si = 0;
+
+    const renderTabs = () => {
+      tabsEl.innerHTML = groups
+        .map((g, i) => `<button type="button" data-g="${i}" class="${i === gi ? 'is-active' : ''}">${g.label}</button>`)
+        .join('');
+    };
+
+    const renderSw = () => {
+      const shades = groups[gi].product.shades || [];
+      swEl.innerHTML = shades
+        .map((c, i) => `<button type="button" data-s="${i}" class="${i === si ? 'is-active' : ''}" style="background:${c}" aria-label="Оттенок ${i + 1}"></button>`)
+        .join('');
+    };
+
+    const apply = () => {
+      const g = groups[gi];
+      const shades = g.product.shades || [];
+      const color = shades[si] || '#c2182a';
+      stage.classList.add('is-swapping');
+      setTimeout(() => {
+        img.src = g.product.img;
+        img.alt = g.product.name;
+        stage.style.setProperty('--c', color);
+        nameEl.textContent = `${g.label} · ${String(si + 1).padStart(2, '0')}`;
+        prodEl.textContent = g.product.name;
+        finEl.textContent = (g.product.specs && g.product.specs['Финиш']) || '—';
+        holdEl.textContent = HOLD[g.product.cat] || 'весь день';
+        link.href = `product.html?id=${g.product.id}`;
+        stage.classList.remove('is-swapping');
+      }, 160);
+    };
+
+    renderTabs();
+    renderSw();
+
+    root.addEventListener('click', (e) => {
+      const tab = e.target.closest('[data-g]');
+      if (tab) {
+        gi = +tab.dataset.g;
+        si = 0;
+        renderTabs();
+        renderSw();
+        apply();
+        return;
+      }
+      const sw = e.target.closest('[data-s]');
+      if (sw) {
+        si = +sw.dataset.s;
+        renderSw();
+        apply();
+      }
     });
   }
 
@@ -521,10 +597,9 @@
     initFavs();
     initReveal();
     initRailNav();
-    $$('.rail, .lookbook__track').forEach(initDragScroll);
+    $$('.rail, .textures__track').forEach(initDragScroll);
     initAccordion();
     initForms();
-    initHeroParallax();
-    initCursor();
+    initShades();
   });
 })();

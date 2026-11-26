@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>L'ATUAGE COSMETIC — белорусская декоративная косметика</title>
 <meta name="description" content="Официальный сайт L'ATUAGE cosmetic: 300+ наименований декоративной косметики, 500+ магазинов по СНГ, производство полного цикла в Минске. Без спирта, стойкость до 24 часов.">
-<meta name="theme-color" content="#f4efe8">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="website">
 <meta property="og:title" content="L'ATUAGE COSMETIC — белорусская декоративная косметика">
 <meta property="og:description" content="Официальный сайт L'ATUAGE cosmetic: 300+ наименований декоративной косметики, 500+ магазинов по СНГ, производство полного цикла в Минске. Без спирта, стойкость до 24 часов.">
-<meta property="og:image" content="assets/img/photos/hero-portrait.webp">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317120f'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23f4efe8' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+<meta property="og:image" content="assets/img/products/teni-smart-touch.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230b0b0c'/%3E%3Crect x='0' y='56' width='64' height='8' fill='%23e5112b'/%3E%3Ctext x='32' y='40' font-family='Helvetica,Arial' font-size='30' font-weight='600' fill='%23fff' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=5">
 </head>
 <body>
 <div class="loader" aria-hidden="true">
@@ -33,7 +33,7 @@
     </a>
     <nav class="nav" aria-label="Основная навигация">
       <a href="catalog.html">Каталог</a>
-      <a href="index.html#collections">Коллекции</a>
+      <a href="index.html#best">Хиты</a>
       <a href="about.html">О бренде</a>
       <a href="contacts.html">Где купить</a>
       <a href="index.html#journal">Журнал</a>
@@ -43,7 +43,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.35-7-9a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 4.65-7 9-7 9Z"/></svg>
         <span data-fav-count style="position:absolute;top:-4px;right:-4px;min-width:16px;height:16px;border-radius:9px;background:var(--red);color:#fff;font-size:9px;font-weight:700;display:none;place-items:center;line-height:1"></span>
       </a>
-      <a class="btn" href="catalog.html"><span>Смотреть каталог</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn" href="catalog.html"><span>Каталог</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <button class="icon-btn burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
     </div>
   </div>
@@ -53,7 +53,7 @@
   <button class="icon-btn menu-close" aria-label="Закрыть меню"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
   <nav class="menu__list" aria-label="Мобильное меню">
     <a href="catalog.html"><small>01</small>Каталог</a>
-    <a href="index.html#collections"><small>02</small>Коллекции</a>
+    <a href="index.html#best"><small>02</small>Хиты</a>
     <a href="about.html"><small>03</small>О бренде</a>
     <a href="contacts.html"><small>04</small>Где купить</a>
     <a href="index.html#journal"><small>05</small>Журнал</a>
@@ -67,119 +67,74 @@
 
 <main id="top">
 
-<section class="hero grain">
-  <div class="hero__bg"></div>
-  <div class="hero__ghost" aria-hidden="true">L'ATUAGE</div>
+<section class="hero">
   <div class="container">
-    <div class="hero__inner">
-      <div class="hero__copy">
-        <span class="badge-round"><i></i>Сделано в Беларуси · с 2014</span>
+    <div class="hero__grid">
+      <div class="hero__lead">
+        <span class="label">L'ATUAGE · Минск · с 2014 года</span>
         <h1>
-          <span class="line"><span>Красиво.</span></span>
-          <span class="line"><span>Честно.</span></span>
-          <span class="line"><span><em>На 24 часа.</em></span></span>
+          <span>Декоративная</span>
+          <span>косметика</span>
+          <span class="hero__accent">без компромиссов</span>
         </h1>
-        <p class="hero__text">L'ATUAGE cosmetic — белорусская декоративная косметика полного цикла.
-        Более 300 наименований, собственные формулы и стойкость, которой доверяют визажисты.</p>
+      </div>
+      <div class="hero__side">
+        <p>300+ наименований собственного производства. Формулы, которые держатся
+        до 24 часов и не требуют «дотягивания» кистью.</p>
         <div class="hero__cta">
           <a class="btn btn--red" href="catalog.html"><span>Смотреть каталог</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <a class="btn btn--ghost" href="about.html"><span>О бренде</span></a>
         </div>
-        <div class="hero__meta">
-          <div><strong data-count="300" data-suffix="+">300+</strong><span>наименований</span></div>
-          <div><strong data-count="500" data-suffix="+">500+</strong><span>магазинов</span></div>
-          <div><strong data-count="12">12</strong><span>лет на рынке</span></div>
-        </div>
-      </div>
-
-      <div class="hero__visual">
-        <div class="hero__frame" data-depth="10">
-          <img src="assets/img/photos/hero-portrait.webp" alt="Макияж L'ATUAGE: красная помада и выразительный взгляд" width="800" height="1000" fetchpriority="high">
-        </div>
-        <div class="hero__float hero__float--a" data-depth="34"><img src="assets/img/products/pomada-inred.webp" alt="Помада in Red"></div>
-        <div class="hero__float hero__float--b" data-depth="46"><img src="assets/img/products/tush-5d.webp" alt="Тушь Panoramic Eyes 5D"></div>
-        <div class="hero__float hero__float--c" data-depth="26"><img src="assets/img/products/pudra-smart.webp" alt="Пудра Smart Touch"></div>
-        <div class="hero__badge" data-depth="-16"><span>24 часа<small>стойкость</small></span></div>
+        <ul class="hero__facts">
+          <li><b data-count="300" data-suffix="+">300+</b><span>наименований</span></li>
+          <li><b data-count="500" data-suffix="+">500+</b><span>магазинов</span></li>
+          <li><b data-count="6">6</b><span>стран</span></li>
+        </ul>
       </div>
     </div>
   </div>
-  <div class="hero__scroll" aria-hidden="true"><span>листай</span><i></i></div>
+
+  <div class="shelf">
+    <a class="shelf__item" href="catalog.html?cat=eyes" style="--tint:#e9e3d8">
+      <span class="shelf__idx">01</span>
+      <img src="assets/img/products/teni-mysterious.webp" alt="Тени для век" fetchpriority="high">
+      <span class="shelf__meta"><b>Глаза</b><i>21 продукт</i></span>
+    </a>
+    <a class="shelf__item" href="catalog.html?cat=lips" style="--tint:#f7d7d4">
+      <span class="shelf__idx">02</span>
+      <img src="assets/img/products/pomada-inred.webp" alt="Помада">
+      <span class="shelf__meta"><b>Губы</b><i>7 продуктов</i></span>
+    </a>
+    <a class="shelf__item" href="catalog.html?cat=face" style="--tint:#f1e4c3">
+      <span class="shelf__idx">03</span>
+      <img src="assets/img/products/pudra-smart.webp" alt="Пудра">
+      <span class="shelf__meta"><b>Лицо</b><i>18 продуктов</i></span>
+    </a>
+    <a class="shelf__item" href="catalog.html?cat=hands" style="--tint:#dee3d4">
+      <span class="shelf__idx">04</span>
+      <img src="assets/img/products/lak-cream.webp" alt="Лак для ногтей">
+      <span class="shelf__meta"><b>Руки</b><i>10 продуктов</i></span>
+    </a>
+  </div>
 </section>
 
 <div class="ticker">
-  <div class="marquee" style="--dur:42s">
+  <div class="marquee" style="--dur:46s">
     <div class="marquee__track">
-      <span>Liquid Metal</span><span>BE chic</span><span>Smart Touch</span><span>Mineral Balance</span><span>Strobing</span><span>Full HD</span>
+      <span>Liquid Metal</span><span>BE chic</span><span>Smart Touch</span><span>Mineral Balance</span>
+      <span>Strobing</span><span>Full HD</span><span>Mysterious Eyes</span><span>Perfect Skin</span>
     </div>
   </div>
 </div>
 
-<section class="stats">
-  <div class="container">
-    <div class="stats__grid">
-      <div class="stats__item"><b data-count="500" data-suffix="+">500+</b><span>магазинов-партнёров</span></div>
-      <div class="stats__item"><b data-count="300" data-suffix="+">300+</b><span>наименований в каталоге</span></div>
-      <div class="stats__item"><b data-count="12">12</b><span>лет на рынке</span></div>
-      <div class="stats__item"><b data-count="6">6</b><span>стран присутствия</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="collections">
+<section class="section" id="best">
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="eyebrow label">01 — Коллекции</span>
-        <h2>Выбери свою <em>территорию</em></h2>
+        <span class="label">01 / Хиты</span>
+        <h2>Покупают <em>снова и снова</em></h2>
       </div>
-      <a class="link-arrow" href="catalog.html">Весь каталог <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-
-    <div class="cats__grid">
-      <a class="cat reveal" href="catalog.html?cat=eyes" style="--tint:#e6c9c1">
-        <div class="cat__top"><span class="cat__idx">01</span><span class="cat__count">21 продукт</span></div>
-        <div class="cat__img"><img src="assets/img/products/teni-mysterious.webp" alt="Тени для век"></div>
-        <div class="cat__foot">
-          <div><h3>Глаза</h3><p>Тени, туши, подводки</p></div>
-          <span class="cat__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </div>
-      </a>
-      <a class="cat reveal" href="catalog.html?cat=lips" style="--tint:#efc9c6;--d:1">
-        <div class="cat__top"><span class="cat__idx">02</span><span class="cat__count">7 продуктов</span></div>
-        <div class="cat__img"><img src="assets/img/products/pomada-inred.webp" alt="Помада"></div>
-        <div class="cat__foot">
-          <div><h3>Губы</h3><p>Помады, блески, бальзамы</p></div>
-          <span class="cat__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </div>
-      </a>
-      <a class="cat reveal" href="catalog.html?cat=face" style="--tint:#f0dcc9;--d:2">
-        <div class="cat__top"><span class="cat__idx">03</span><span class="cat__count">18 продуктов</span></div>
-        <div class="cat__img"><img src="assets/img/products/pudra-smart.webp" alt="Пудра"></div>
-        <div class="cat__foot">
-          <div><h3>Лицо</h3><p>Тон, пудры, хайлайтеры</p></div>
-          <span class="cat__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </div>
-      </a>
-      <a class="cat reveal" href="catalog.html?cat=hands" style="--tint:#e2d5cf;--d:3">
-        <div class="cat__top"><span class="cat__idx">04</span><span class="cat__count">10 продуктов</span></div>
-        <div class="cat__img"><img src="assets/img/products/lak-cream.webp" alt="Лак для ногтей"></div>
-        <div class="cat__foot">
-          <div><h3>Руки</h3><p>Лаки и уход</p></div>
-          <span class="cat__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="section section--tight" style="padding-top:0">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <span class="eyebrow label">02 — Хиты</span>
-        <h2>То, что <em>покупают снова</em></h2>
-      </div>
-      <div class="rail-nav" data-rail>
+      <div class="rail-nav">
         <button class="rail-btn" data-rail-prev aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button>
         <button class="rail-btn" data-rail-next aria-label="Вперёд"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
       </div>
@@ -190,19 +145,67 @@
   </div>
 </section>
 
+<section class="section" id="formula">
+  <div class="container">
+    <div class="formula">
+      <div class="formula__lead">
+        <span class="label">02 / Формула</span>
+        <h2>Что внутри —<br><em>то и на коже</em></h2>
+        <p>Мы не гонимся за «вау-составом» на упаковке. В формулах только то,
+        что реально работает: пигмент, текстура и стойкость, проверенные лабораторией.</p>
+        <a class="btn btn--ghost" href="about.html#production"><span>О производстве</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="specs">
+        <div class="spec"><span>Спирт</span><b class="is-no">Не содержится</b></div>
+        <div class="spec"><span>Стойкость</span><b>До 24 часов</b></div>
+        <div class="spec"><span>Дерматологический контроль</span><b>Каждая партия</b></div>
+        <div class="spec"><span>Тесты на животных</span><b class="is-no">Не проводятся</b></div>
+        <div class="spec"><span>Производство</span><b>Минск, Беларусь</b></div>
+        <div class="spec"><span>Сертификация</span><b>Республика Беларусь</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="shades">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="label">03 / Оттенки</span>
+        <h2>Подбери свой <em>за пару кликов</em></h2>
+      </div>
+      <p class="u-dim" style="max-width:30ch;font-size:14px;margin:0">Четыре семейства оттенков — от нюдовых до винных. Нажмите на цвет, чтобы увидеть продукт.</p>
+    </div>
+  </div>
+  <div class="shadex" data-shadex>
+    <div class="shadex__stage" data-shadex-stage style="--c:#c2182a">
+      <img data-shadex-img src="assets/img/products/pomada-inred.webp" alt="Помада in Red">
+      <span class="shadex__name" data-shadex-name>Губы · 01</span>
+    </div>
+    <div class="shadex__panel">
+      <div class="shadex__tabs" data-shadex-tabs></div>
+      <div class="shadex__sw" data-shadex-sw></div>
+      <dl class="shadex__info">
+        <div><dt>Продукт</dt><dd data-shadex-prod>Помада in Red</dd></div>
+        <div><dt>Финиш</dt><dd data-shadex-fin>Сатиновый</dd></div>
+        <div><dt>Стойкость</dt><dd data-shadex-hold>до 8 часов</dd></div>
+      </dl>
+      <a class="btn btn--red" data-shadex-link href="product.html?id=pomada-inred"><span>Смотреть продукт</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     <div class="split">
-      <div class="split__media reveal-img">
-        <img src="assets/img/photos/makeup-apply.webp" alt="Визажист наносит макияж L'ATUAGE" loading="lazy">
-        <div class="split__tag">
-          <b>100%</b>
-          <span>собственное производство в Минске — от идеи до витрины</span>
-        </div>
+      <div class="plate" style="--tint:#e9e3d8">
+        <span class="plate__idx">100%</span>
+        <img src="assets/img/products/teni-smart-touch.webp" alt="Палетка L'ATUAGE Smart Touch" loading="lazy">
+        <span class="plate__cap">Палетка Smart Touch · 12 оттенков</span>
       </div>
       <div>
-        <span class="eyebrow label">03 — Производство</span>
-        <h2>Свои формулы.<br><em>Своя лаборатория.</em></h2>
+        <span class="label">04 / Производство</span>
+        <h2 style="margin-top:16px">Свои формулы.<br><em>Своя лаборатория.</em></h2>
         <p>Мы не перепродаём чужое. Каждая формула разрабатывается и тестируется в Минске,
         а партия проходит контроль качества до того, как попадёт на полку.</p>
         <ul class="split__list">
@@ -211,54 +214,19 @@
           <li><b>03</b><span>Производство полного цикла на одной площадке</span></li>
           <li><b>04</b><span>Логистика в 500+ магазинов СНГ</span></li>
         </ul>
-        <a class="btn btn--ghost u-mt-24" href="about.html"><span>Как мы работаем</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section features grain">
+<section class="section textures" style="padding-inline:0">
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="eyebrow label">04 — Принципы</span>
-        <h2 style="color:#f4efe8">Четыре вещи,<br>за которые <em style="color:#e8cfc6">мы отвечаем</em></h2>
+        <span class="label">05 / Витрина</span>
+        <h2>Вся палитра <em>на одном экране</em></h2>
       </div>
-      <p style="max-width:34ch;color:rgba(244,239,232,.55);font-size:14px">Мы сознательно не гонимся за «вау-составом» на упаковке. Только то, что реально работает на коже.</p>
-    </div>
-    <div class="features__grid">
-      <div class="feature reveal">
-        <svg viewBox="0 0 32 32"><path d="M16 4c4 4 7 8 7 12a7 7 0 0 1-14 0c0-4 3-8 7-12Z"/><path d="M16 12v10"/></svg>
-        <h3>Без спирта</h3>
-        <p>Формулы без агрессивных растворителей — не сушат кожу и не оставляют белых пятен.</p>
-      </div>
-      <div class="feature reveal" style="--d:1">
-        <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><path d="M16 10v6l4 2"/></svg>
-        <h3>24 часа стойкости</h3>
-        <p>Макияж, который доживает до конца дня: без отпечатков на чашке и осыпания.</p>
-      </div>
-      <div class="feature reveal" style="--d:2">
-        <svg viewBox="0 0 32 32"><path d="M16 4 6 9v7c0 6 4.4 10 10 12 5.6-2 10-6 10-12V9L16 4Z"/><path d="m12 16 3 3 6-6"/></svg>
-        <h3>Дерматологический контроль</h3>
-        <p>Каждая партия проходит тесты — продукт подходит для чувствительной кожи.</p>
-      </div>
-      <div class="feature reveal" style="--d:3">
-        <svg viewBox="0 0 32 32"><path d="M11 20c-3 0-5-2-5-5s2-5 5-5c1-3 4-5 7-5 4 0 7 3 7 7 2 .5 3 2 3 4 0 2.5-2 4-4 4H11Z"/><circle cx="12" cy="15" r="1"/><circle cx="19" cy="14" r="1"/></svg>
-        <h3>Без тестов на животных</h3>
-        <p>Не тестируем продукцию на животных и выбираем ответственных поставщиков сырья.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section lookbook">
-  <div class="container">
-    <div class="lookbook__head">
-      <div>
-        <span class="eyebrow label">05 — Лукбук</span>
-        <h2 style="font-size:clamp(32px,4.6vw,62px)">Пять настроений <em style="font-style:italic;color:var(--red)">одной палеткой</em></h2>
-      </div>
-      <div class="rail-nav" data-rail>
+      <div class="rail-nav">
         <span class="drag-hint">Тяни<i></i></span>
         <button class="rail-btn" data-rail-prev aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button>
         <button class="rail-btn" data-rail-next aria-label="Вперёд"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
@@ -266,43 +234,26 @@
     </div>
   </div>
   <div data-rail>
-    <div class="lookbook__track">
-      <figure class="look">
-        <img src="assets/img/photos/spa.webp" alt="Неоновый лук" loading="lazy">
-        <figcaption class="look__cap"><h3>Neon Muse</h3><span>Metal Show</span></figcaption>
-      </figure>
-      <div class="look look--text">
-        <span class="label" style="opacity:.7">Look 01</span>
-        <div><h3>Собери свой оттенок</h3><p>Смешивай, наслаивай, экспериментируй — формулы это позволяют.</p></div>
-        <a class="link-arrow" href="catalog.html" style="border-color:rgba(255,255,255,.5);color:#fff">В каталог <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-      <figure class="look">
-        <img src="assets/img/photos/look-bluenight.webp" alt="Синий свет" loading="lazy">
-        <figcaption class="look__cap"><h3>Blue Hour</h3><span>Liquid Metal</span></figcaption>
-      </figure>
-      <figure class="look">
-        <img src="assets/img/photos/look-lavender.webp" alt="Спокойный образ" loading="lazy">
-        <figcaption class="look__cap"><h3>Soft Focus</h3><span>Perfect Skin</span></figcaption>
-      </figure>
-      <figure class="look">
-        <img src="assets/img/photos/look-sheer.webp" alt="Вечерний образ" loading="lazy">
-        <figcaption class="look__cap"><h3>After Dark</h3><span>Mysterious Eyes</span></figcaption>
-      </figure>
-      <figure class="look">
-        <img src="assets/img/photos/nails.webp" alt="Маникюр" loading="lazy">
-        <figcaption class="look__cap"><h3>Nail Story</h3><span>Smart Nails</span></figcaption>
-      </figure>
+    <div class="textures__track">
+      <figure class="texture" style="--tint:#f7d7d4"><img src="assets/img/products/pomada-inred.webp" alt="Помада in Red" loading="lazy"><figcaption><b>Помада in Red</b><span>Губы</span></figcaption></figure>
+      <figure class="texture" style="--tint:#e9e3d8"><img src="assets/img/products/teni-metal-show.webp" alt="Тени Liquid Metal" loading="lazy"><figcaption><b>Тени Liquid Metal</b><span>Глаза</span></figcaption></figure>
+      <figure class="texture" style="--tint:#f1e4c3"><img src="assets/img/products/pudra-smart.webp" alt="Пудра Smart Touch" loading="lazy"><figcaption><b>Пудра Smart Touch</b><span>Лицо</span></figcaption></figure>
+      <figure class="texture" style="--tint:#dee3d4"><img src="assets/img/products/lak-cream.webp" alt="Лак Cream" loading="lazy"><figcaption><b>Лак Cream</b><span>Руки</span></figcaption></figure>
+      <figure class="texture" style="--tint:#e4ddeb"><img src="assets/img/products/blesk-gub.webp" alt="Блеск для губ" loading="lazy"><figcaption><b>Блеск для губ</b><span>Губы</span></figcaption></figure>
+      <figure class="texture" style="--tint:#efe6dc"><img src="assets/img/products/tush-5d.webp" alt="Тушь Panoramic Eyes 5D" loading="lazy"><figcaption><b>Тушь 5D</b><span>Глаза</span></figcaption></figure>
+      <figure class="texture" style="--tint:#f3e8d6"><img src="assets/img/products/highlighter-liquid.webp" alt="Хайлайтер" loading="lazy"><figcaption><b>Хайлайтер Liquid</b><span>Лицо</span></figcaption></figure>
     </div>
   </div>
 </section>
 
-<section class="section section--tight">
+<section class="section">
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="eyebrow label">06 — Путь продукта</span>
+        <span class="label">06 / Как это делается</span>
         <h2>От идеи до <em>витрины</em></h2>
       </div>
+      <a class="link-arrow" href="about.html">Подробнее о бренде <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
     <div class="steps">
       <div class="step reveal"><b>01 / Идея</b><h3>Тренд-ресёрч</h3><p>Смотрим на подиумы, соцсети и запросы покупателей — выбираем, что действительно нужно.</p></div>
@@ -313,30 +264,30 @@
   </div>
 </section>
 
-<section class="section quotes" id="journal">
+<section class="section" id="journal">
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="eyebrow label">07 — Журнал</span>
+        <span class="label">07 / Журнал</span>
         <h2>Читать <em>перед покупкой</em></h2>
       </div>
       <a class="link-arrow" href="#">Все статьи <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
     <div class="journal__grid">
       <a class="post reveal" href="#">
-        <div class="post__media reveal-img"><img src="assets/img/photos/eyeliner.webp" alt="Стрелки" loading="lazy"></div>
+        <div class="post__media" style="--tint:#e9e3d8"><img src="assets/img/products/podvodka.webp" alt="Подводка L'ATUAGE" loading="lazy"></div>
         <div class="post__meta"><em>Гид</em><span>12 ноября 2025</span></div>
         <h3>Стрелки без права на ошибку: 4 способа для новичков</h3>
         <p>Разбираем подводки и фломастеры L'ATUAGE — какая форма линии получается с каждым.</p>
       </a>
       <a class="post reveal" href="#" style="--d:1">
-        <div class="post__media reveal-img"><img src="assets/img/photos/lips-flowers.webp" alt="Помады" loading="lazy"></div>
+        <div class="post__media" style="--tint:#f7d7d4"><img src="assets/img/products/pomada-bematte.webp" alt="Помада be Matte" loading="lazy"></div>
         <div class="post__meta"><em>Тренды</em><span>28 октября 2025</span></div>
         <h3>Красный — новый нюд: как выбрать свой оттенок</h3>
-        <p>Тёплый, холодный, винный — показываем на реальных примерах, как подобрать красную помаду.</p>
+        <p>Тёплый, холодный, винный — показываем, как подобрать красную помаду.</p>
       </a>
       <a class="post reveal" href="#" style="--d:2">
-        <div class="post__media reveal-img"><img src="assets/img/photos/dropper-white.webp" alt="Сыворотка" loading="lazy"></div>
+        <div class="post__media" style="--tint:#dee3d4"><img src="assets/img/products/syvorotka.webp" alt="Сыворотка L'ATUAGE" loading="lazy"></div>
         <div class="post__meta"><em>Уход</em><span>10 октября 2025</span></div>
         <h3>Сыворотка, тоник, пудра: правильный порядок слоёв</h3>
         <p>Как уход и макияж сочетаются, чтобы тон держался до вечера.</p>
@@ -345,11 +296,11 @@
   </div>
 </section>
 
-<section class="section section--tight quotes">
+<section class="section section--tight">
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="eyebrow label">08 — Отзывы</span>
+        <span class="label">08 / Отзывы</span>
         <h2>Что говорят <em>о нас</em></h2>
       </div>
       <span class="badge-round"><i></i>4.8 из 5 · 1 200+ отзывов</span>
@@ -358,38 +309,18 @@
       <figure class="quote reveal">
         <div class="quote__stars"><svg viewBox="0 0 24 24"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg></div>
         <blockquote>«Кто спрашивал о помаде? Это #LATUAGECOSMETIC №108 — бюджетная и офигенная. Она уже в блоге».</blockquote>
-        <figcaption><img src="assets/img/photos/look-lavender.webp" alt=""><div><b>@rysichka_makeup</b>Instagram</div></figcaption>
+        <figcaption><div><b>@rysichka_makeup</b>Instagram</div></figcaption>
       </figure>
       <figure class="quote reveal" style="--d:1">
         <div class="quote__stars"><svg viewBox="0 0 24 24"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg></div>
         <blockquote>«Скоро обзор теней от L'ATUAGE. Все тени и тестеры в наличии — в Минске больше нигде нет этой косметики».</blockquote>
-        <figcaption><img src="assets/img/photos/warm-portrait.webp" alt=""><div><b>@kolesnikova_elena</b>Instagram</div></figcaption>
+        <figcaption><div><b>@kolesnikova_elena</b>Instagram</div></figcaption>
       </figure>
       <figure class="quote reveal" style="--d:2">
         <div class="quote__stars"><svg viewBox="0 0 24 24"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg></div>
         <blockquote>«Плотность и пигмент как у люкса, а цена — как у масс-маркета. Мои клиентки возвращаются именно за этим».</blockquote>
-        <figcaption><img src="assets/img/photos/look-bluenight.webp" alt=""><div><b>Инна Леута</b>Арт-директор «Академия Стиля»</div></figcaption>
+        <figcaption><div><b>Инна Леута</b>Арт-директор «Академия Стиля»</div></figcaption>
       </figure>
-    </div>
-  </div>
-</section>
-
-<section class="section section--tight">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <span class="eyebrow label">09 — Сообщество</span>
-        <h2>#latuagecosmetic</h2>
-      </div>
-      <a class="link-arrow" href="https://www.instagram.com/latuage_cosmetic/" target="_blank" rel="noopener">Мы в Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-    <div class="insta">
-      <a href="https://www.instagram.com/latuage_cosmetic/" target="_blank" rel="noopener"><img src="assets/img/photos/smile-red.webp" alt="" loading="lazy"></a>
-      <a href="https://www.instagram.com/latuage_cosmetic/" target="_blank" rel="noopener"><img src="assets/img/photos/afro-glow.webp" alt="" loading="lazy"></a>
-      <a href="https://www.instagram.com/latuage_cosmetic/" target="_blank" rel="noopener"><img src="assets/img/photos/makeup-apply.webp" alt="" loading="lazy"></a>
-      <a href="https://www.instagram.com/latuage_cosmetic/" target="_blank" rel="noopener"><img src="assets/img/photos/pink-back.webp" alt="" loading="lazy"></a>
-      <a href="https://www.instagram.com/latuage_cosmetic/" target="_blank" rel="noopener"><img src="assets/img/photos/dropper-white.webp" alt="" loading="lazy"></a>
-      <a href="https://www.instagram.com/latuage_cosmetic/" target="_blank" rel="noopener"><img src="assets/img/photos/dark-portrait.webp" alt="" loading="lazy"></a>
     </div>
   </div>
 </section>
@@ -398,15 +329,15 @@
   <div class="container">
     <div class="stores__inner">
       <div>
-        <span class="eyebrow label">10 — Где купить</span>
-        <h2>500+ магазинов<br><em>в шести странах</em></h2>
-        <p class="u-dim" style="max-width:44ch">Беларусь, Россия, Казахстан, Украина, Молдова и Польша.
+        <span class="label">09 / Где купить</span>
+        <h2 style="margin-top:16px">500+ магазинов<br><em>в шести странах</em></h2>
+        <p>Беларусь, Россия, Казахстан, Украина, Молдова и Польша.
         Ищем партнёров в новых городах — пишите, если у вас есть магазин.</p>
         <div class="stores__legend">
           <span><b>210</b>Беларусь</span><span><b>160</b>Россия</span><span><b>64</b>Казахстан</span>
           <span><b>42</b>Украина</span><span><b>18</b>Молдова</span><span><b>12</b>Польша</span>
         </div>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px">
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:26px">
           <a class="btn btn--red" href="contacts.html#where"><span>Найти магазин</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <a class="btn btn--ghost" href="contacts.html#wholesale"><span>Стать партнёром</span></a>
         </div>
@@ -423,7 +354,7 @@
     <path d="M196 232 98 148"/><path d="M196 232 352 118"/><path d="M196 232 262 300"/>
     <path d="M196 232 150 340"/><path d="M196 232 438 250"/>
   </g>
-  <g class="map-node" font-family="Manrope, sans-serif" font-size="11" letter-spacing=".12em" fill="rgba(23,18,15,.62)">
+  <g class="map-node" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing=".12em" fill="rgba(23,18,15,.62)">
     <circle cx="98" cy="148" r="4" fill="#17120f"/><text x="98" y="132" text-anchor="middle">ВАРШАВА</text>
     <circle cx="352" cy="118" r="4" fill="#17120f"/><text x="352" y="102" text-anchor="middle">МОСКВА</text>
     <circle cx="262" cy="300" r="4" fill="#17120f"/><text x="262" y="324" text-anchor="middle">КИЕВ</text>
@@ -434,10 +365,10 @@
     <circle cx="196" cy="232" r="26" fill="rgba(210,33,44,.10)" class="map-ping"/>
     <circle cx="196" cy="232" r="7" fill="#d2212c"/>
     <circle cx="196" cy="232" r="2.4" fill="#fff"/>
-    <text x="196" y="200" text-anchor="middle" font-family="Manrope, sans-serif" font-size="11"
+    <text x="196" y="200" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11"
           font-weight="700" letter-spacing=".14em" fill="#d2212c">МИНСК</text>
   </g>
-  <g font-family="Manrope, sans-serif" font-size="10" letter-spacing=".1em" fill="rgba(23,18,15,.4)">
+  <g font-family="JetBrains Mono, monospace" font-size="10" letter-spacing=".1em" fill="rgba(23,18,15,.4)">
     <text x="24" y="396">500+ ТОЧЕК ПРОДАЖ</text>
     <text x="496" y="396" text-anchor="end">6 СТРАН</text>
   </g>
@@ -448,12 +379,11 @@
 </section>
 
 <section class="section cta">
-  <div class="cta__bg"><img src="assets/img/photos/afro-glow.webp" alt="" loading="lazy"></div>
   <div class="container">
     <div class="cta__inner">
       <div>
-        <span class="eyebrow label" style="color:rgba(244,239,232,.5)">Новинки первыми</span>
-        <h2>Не пропусти <em>новые коллекции</em></h2>
+        <span class="label" style="color:rgba(255,255,255,.45)">Новинки первыми</span>
+        <h2 style="margin-top:16px">Не пропусти <em>новые коллекции</em></h2>
         <p>Раз в месяц присылаем письмо: новые продукты, разборы оттенков и промокоды для подписчиков. Без спама.</p>
       </div>
       <form class="cta__form" data-fake>
@@ -534,7 +464,7 @@
   </div>
 </footer>
 <button class="to-top" aria-label="Наверх"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
-<script src="assets/js/data.js"></script>
-<script src="assets/js/app.js"></script>
+<script src="assets/js/data.js?v=4"></script>
+<script src="assets/js/app.js?v=4"></script>
 </body>
 </html>

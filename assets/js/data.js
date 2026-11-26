@@ -1,11 +1,11 @@
 /* L'ATUAGE COSMETIC — каталог */
 window.CATEGORIES = [
-  { id: 'all',         name: 'Все продукты',   short: 'Все',      img: 'assets/img/products/teni-mysterious.webp', tint: '#ecd9d1' },
-  { id: 'eyes',        name: 'Глаза',          short: 'Глаза',    img: 'assets/img/products/teni-compact.webp',    tint: '#e8d6d0' },
-  { id: 'lips',        name: 'Губы',           short: 'Губы',     img: 'assets/img/products/pomada-inred.webp',    tint: '#efd2cd' },
-  { id: 'face',        name: 'Лицо',           short: 'Лицо',     img: 'assets/img/products/pudra-smart.webp',     tint: '#f0e0d5' },
-  { id: 'hands',       name: 'Руки и ногти',   short: 'Руки',     img: 'assets/img/products/lak-cream.webp',       tint: '#e6dbd6' },
-  { id: 'accessories', name: 'Аксессуары',     short: 'Аксессуары', img: 'assets/img/products/bag-chic-glam.webp', tint: '#e3d8d4' }
+  { id: 'all',         name: 'Все продукты',   short: 'Все',      img: 'assets/img/products/teni-mysterious.webp', tint: '#e9e3d8' },
+  { id: 'eyes',        name: 'Глаза',          short: 'Глаза',    img: 'assets/img/products/teni-compact.webp',    tint: '#e9e3d8' },
+  { id: 'lips',        name: 'Губы',           short: 'Губы',     img: 'assets/img/products/pomada-inred.webp',    tint: '#f7d7d4' },
+  { id: 'face',        name: 'Лицо',           short: 'Лицо',     img: 'assets/img/products/pudra-smart.webp',     tint: '#f1e4c3' },
+  { id: 'hands',       name: 'Руки и ногти',   short: 'Руки',     img: 'assets/img/products/lak-cream.webp',       tint: '#dee3d4' },
+  { id: 'accessories', name: 'Аксессуары',     short: 'Аксессуары', img: 'assets/img/products/bag-chic-glam.webp', tint: '#e4ddeb' }
 ];
 
 const SH = {
@@ -216,5 +216,5 @@ window.PRODUCTS = [
 
 window.CAT_NAME = { eyes: 'Глаза', lips: 'Губы', face: 'Лицо', hands: 'Руки и ногти', accessories: 'Аксессуары' };
 window.TINT = {
-  eyes: '#ecd8d1', lips: '#f0d3ce', face: '#f1e2d6', hands: '#e8ddd7', accessories: '#e6dbd7'
+  eyes: '#e9e3d8', lips: '#f7d7d4', face: '#f1e4c3', hands: '#dee3d4', accessories: '#e4ddeb'
 };

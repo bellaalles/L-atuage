@@ -23,7 +23,7 @@ ICONS = {
 
 NAV = [
     ('catalog.html', 'Каталог'),
-    ('index.html#collections', 'Коллекции'),
+    ('index.html#best', 'Хиты'),
     ('about.html', 'О бренде'),
     ('contacts.html', 'Где купить'),
     ('index.html#journal', 'Журнал'),
@@ -36,16 +36,16 @@ HEAD = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{desc}">
-<meta name="theme-color" content="#f4efe8">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
-<meta property="og:image" content="assets/img/photos/hero-portrait.webp">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317120f'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23f4efe8' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+<meta property="og:image" content="assets/img/products/teni-smart-touch.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230b0b0c'/%3E%3Crect x='0' y='56' width='64' height='8' fill='%23e5112b'/%3E%3Ctext x='32' y='40' font-family='Helvetica,Arial' font-size='30' font-weight='600' fill='%23fff' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=5">
 </head>
 <body>
 <div class="loader" aria-hidden="true">
@@ -72,7 +72,7 @@ HEADER = """
         {heart}
         <span data-fav-count style="position:absolute;top:-4px;right:-4px;min-width:16px;height:16px;border-radius:9px;background:var(--red);color:#fff;font-size:9px;font-weight:700;display:none;place-items:center;line-height:1"></span>
       </a>
-      <a class="btn" href="catalog.html"><span>Смотреть каталог</span>{arrow}</a>
+      <a class="btn" href="catalog.html"><span>Каталог</span>{arrow}</a>
       <button class="icon-btn burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu">{menu}</button>
     </div>
   </div>
@@ -152,8 +152,8 @@ FOOTER = """
   </div>
 </footer>
 <button class="to-top" aria-label="Наверх">{up}</button>
-<script src="assets/js/data.js"></script>
-<script src="assets/js/app.js"></script>
+<script src="assets/js/data.js?v=4"></script>
+<script src="assets/js/app.js?v=4"></script>
 </body>
 </html>
 """
@@ -231,7 +231,6 @@ CATALOG = """
 </section>
 
 <section class="section cta">
-  <div class="cta__bg"><img src="assets/img/photos/pink-back.webp" alt="" loading="lazy"></div>
   <div class="container">
     <div class="cta__inner">
       <div>
@@ -340,9 +339,10 @@ ABOUT = """
 <section class="section section--tight">
   <div class="container">
     <div class="split split--reverse">
-      <div class="split__media reveal-img">
-        <img src="assets/img/photos/look-lavender.webp" alt="Образ L'ATUAGE" loading="lazy">
-        <div class="split__tag"><b>12</b><span>лет опыта в декоративной косметике</span></div>
+      <div class="plate" style="--tint:#f7d7d4;aspect-ratio:1/1">
+        <span class="plate__idx">12 лет</span>
+        <img src="assets/img/products/pomada-inred.webp" alt="Помада L'ATUAGE in Red" loading="lazy">
+        <span class="plate__cap">Помада in Red · флагман линейки</span>
       </div>
       <div>
         <span class="eyebrow label">Наша идея</span>
@@ -380,12 +380,12 @@ ABOUT = """
 
 <section class="section section--tight">
   <div class="container">
-    <div class="mosaic reveal-img">
-      <figure><img src="assets/img/photos/makeup-apply.webp" alt="Работа визажиста" loading="lazy"></figure>
-      <figure><img src="assets/img/photos/guasha.webp" alt="Уход за кожей" loading="lazy"></figure>
-      <figure><img src="assets/img/photos/powder-brush.webp" alt="Текстура пудры" loading="lazy"></figure>
-      <figure><img src="assets/img/photos/serum-dark.webp" alt="Сыворотка" loading="lazy"></figure>
-      <figure><img src="assets/img/photos/dropper-white.webp" alt="Сыворотка" loading="lazy"></figure>
+    <div class="mosaic">
+      <figure style="--tint:#e9e3d8"><img src="assets/img/products/teni-smart-touch.webp" alt="Палетка Smart Touch" loading="lazy"></figure>
+      <figure style="--tint:#f7d7d4"><img src="assets/img/products/blesk-gub.webp" alt="Блеск для губ" loading="lazy"></figure>
+      <figure style="--tint:#f1e4c3"><img src="assets/img/products/pudra-mineral.webp" alt="Пудра Mineral Balance" loading="lazy"></figure>
+      <figure style="--tint:#dee3d4"><img src="assets/img/products/lak-effect.webp" alt="Лак Effect" loading="lazy"></figure>
+      <figure style="--tint:#e4ddeb"><img src="assets/img/products/tush-full-hd.webp" alt="Тушь Full HD" loading="lazy"></figure>
     </div>
   </div>
 </section>
@@ -416,7 +416,6 @@ ABOUT = """
 </section>
 
 <section class="section cta">
-  <div class="cta__bg"><img src="assets/img/photos/pink-back.webp" alt="" loading="lazy"></div>
   <div class="container">
     <div class="cta__inner">
       <div>
@@ -582,7 +581,7 @@ MAP_SVG = """<svg viewBox="0 0 520 420" role="img" aria-label="Географи�
     <path d="M196 232 98 148"/><path d="M196 232 352 118"/><path d="M196 232 262 300"/>
     <path d="M196 232 150 340"/><path d="M196 232 438 250"/>
   </g>
-  <g class="map-node" font-family="Manrope, sans-serif" font-size="11" letter-spacing=".12em" fill="rgba(23,18,15,.62)">
+  <g class="map-node" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing=".12em" fill="rgba(23,18,15,.62)">
     <circle cx="98" cy="148" r="4" fill="#17120f"/><text x="98" y="132" text-anchor="middle">ВАРШАВА</text>
     <circle cx="352" cy="118" r="4" fill="#17120f"/><text x="352" y="102" text-anchor="middle">МОСКВА</text>
     <circle cx="262" cy="300" r="4" fill="#17120f"/><text x="262" y="324" text-anchor="middle">КИЕВ</text>
@@ -593,10 +592,10 @@ MAP_SVG = """<svg viewBox="0 0 520 420" role="img" aria-label="Географи�
     <circle cx="196" cy="232" r="26" fill="rgba(210,33,44,.10)" class="map-ping"/>
     <circle cx="196" cy="232" r="7" fill="#d2212c"/>
     <circle cx="196" cy="232" r="2.4" fill="#fff"/>
-    <text x="196" y="200" text-anchor="middle" font-family="Manrope, sans-serif" font-size="11"
+    <text x="196" y="200" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11"
           font-weight="700" letter-spacing=".14em" fill="#d2212c">МИНСК</text>
   </g>
-  <g font-family="Manrope, sans-serif" font-size="10" letter-spacing=".1em" fill="rgba(23,18,15,.4)">
+  <g font-family="JetBrains Mono, monospace" font-size="10" letter-spacing=".1em" fill="rgba(23,18,15,.4)">
     <text x="24" y="396">500+ ТОЧЕК ПРОДАЖ</text>
     <text x="496" y="396" text-anchor="end">6 СТРАН</text>
   </g>
