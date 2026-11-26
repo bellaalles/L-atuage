@@ -37,24 +37,40 @@ INDEX = """
 
 <div class="shelf">
   <a class="shelf__item" href="catalog.html?cat=eyes" style="--tint:#e7dfd0">
-    <span class="shelf__idx">01</span>
-    <img src="assets/img/products/teni-mysterious.webp" alt="Тени для век" fetchpriority="high">
-    <span class="shelf__meta"><b>Глаза</b><i>21 продукт</i></span>
+    <span class="shelf__top"><span class="shelf__idx">01</span><span class="shelf__kind">Категория</span></span>
+    <span class="shelf__stack">
+      <img class="shelf__img shelf__img--a" src="assets/img/products/karandash-glaz.webp" alt="" loading="lazy">
+      <img class="shelf__img shelf__img--b" src="assets/img/products/tush-5d.webp" alt="" loading="lazy">
+      <img class="shelf__img shelf__img--main" src="assets/img/products/teni-mysterious.webp" alt="Тени для век" fetchpriority="high">
+    </span>
+    <span class="shelf__meta"><span class="shelf__title"><b>Глаза</b><i>21 продукт</i></span><span class="shelf__go">{arrow}</span></span>
   </a>
   <a class="shelf__item" href="catalog.html?cat=lips" style="--tint:#f0dbd7">
-    <span class="shelf__idx">02</span>
-    <img src="assets/img/products/pomada-inred.webp" alt="Помада">
-    <span class="shelf__meta"><b>Губы</b><i>7 продуктов</i></span>
+    <span class="shelf__top"><span class="shelf__idx">02</span><span class="shelf__kind">Категория</span></span>
+    <span class="shelf__stack">
+      <img class="shelf__img shelf__img--a" src="assets/img/products/blesk-gub.webp" alt="" loading="lazy">
+      <img class="shelf__img shelf__img--b" src="assets/img/products/pomada-bematte.webp" alt="" loading="lazy">
+      <img class="shelf__img shelf__img--main" src="assets/img/products/pomada-inred.webp" alt="Помада">
+    </span>
+    <span class="shelf__meta"><span class="shelf__title"><b>Губы</b><i>7 продуктов</i></span><span class="shelf__go">{arrow}</span></span>
   </a>
   <a class="shelf__item" href="catalog.html?cat=face" style="--tint:#efe6cf">
-    <span class="shelf__idx">03</span>
-    <img src="assets/img/products/pudra-smart.webp" alt="Пудра">
-    <span class="shelf__meta"><b>Лицо</b><i>18 продуктов</i></span>
+    <span class="shelf__top"><span class="shelf__idx">03</span><span class="shelf__kind">Категория</span></span>
+    <span class="shelf__stack">
+      <img class="shelf__img shelf__img--a" src="assets/img/products/konsiler.webp" alt="" loading="lazy">
+      <img class="shelf__img shelf__img--b" src="assets/img/products/rumyana.webp" alt="" loading="lazy">
+      <img class="shelf__img shelf__img--main" src="assets/img/products/pudra-smart.webp" alt="Пудра">
+    </span>
+    <span class="shelf__meta"><span class="shelf__title"><b>Лицо</b><i>18 продуктов</i></span><span class="shelf__go">{arrow}</span></span>
   </a>
   <a class="shelf__item" href="catalog.html?cat=hands" style="--tint:#e2e6db">
-    <span class="shelf__idx">04</span>
-    <img src="assets/img/products/lak-cream.webp" alt="Лак для ногтей">
-    <span class="shelf__meta"><b>Руки</b><i>10 продуктов</i></span>
+    <span class="shelf__top"><span class="shelf__idx">04</span><span class="shelf__kind">Категория</span></span>
+    <span class="shelf__stack">
+      <img class="shelf__img shelf__img--a" src="assets/img/products/uhod-nogti.webp" alt="" loading="lazy">
+      <img class="shelf__img shelf__img--b" src="assets/img/products/lak-bechic.webp" alt="" loading="lazy">
+      <img class="shelf__img shelf__img--main" src="assets/img/products/lak-cream.webp" alt="Лак для ногтей">
+    </span>
+    <span class="shelf__meta"><span class="shelf__title"><b>Руки</b><i>10 продуктов</i></span><span class="shelf__go">{arrow}</span></span>
   </a>
 </div>
 
